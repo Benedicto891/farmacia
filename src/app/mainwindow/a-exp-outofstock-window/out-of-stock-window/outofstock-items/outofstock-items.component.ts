@@ -1,5 +1,5 @@
 import { XOutofstockDialogBoxComponent } from './../../../xoutofstock-dialog-box/xoutofstock-dialog-box.component';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { InventoryInteractionService } from './../../../a-inventory-window/inventory-interaction.service';
 import { Subscription } from 'rxjs';
 import { Component, OnInit } from '@angular/core';

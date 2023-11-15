@@ -1,4 +1,4 @@
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import {  FormGroup, FormControl, Validators } from '@angular/forms';
 import { InventoryInteractionService } from './../../inventory-interaction.service';
 import { Inventory } from './../../inventory.model';

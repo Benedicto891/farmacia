@@ -3,7 +3,7 @@ import { InventoryInteractionService } from './../../../a-inventory-window/inven
 import { Subscription } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Inventory } from 'src/app/mainwindow/a-inventory-window/inventory.model';
-import { MatDialog, MatDialogModule } from '@angular/material'
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { XExpiredDialogBoxComponent } from 'src/app/mainwindow/x-expired-dialog-box/x-expired-dialog-box.component';
 
 @Component({

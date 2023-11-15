@@ -1,7 +1,8 @@
 import { EmailInteractionService } from './../a-doctor-order-window/new-doctor-order-window/email-Interaction.service';
 import { NgForm } from '@angular/forms';
 import { Component, OnInit , Inject } from '@angular/core';
-import { MAT_DIALOG_DATA , MatSnackBar} from '@angular/material'
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-x-expired-dialog-box',

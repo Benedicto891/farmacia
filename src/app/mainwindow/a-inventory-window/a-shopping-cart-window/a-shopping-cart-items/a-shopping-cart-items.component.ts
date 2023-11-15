@@ -3,7 +3,7 @@ import { AuthDoctorData } from './../../../../auth/doctorAuth/doctorAuth-model';
 import { AuthDoctorUserService } from './../../../../auth/doctorAuth/authDoctorUser.service';
 import { NgForm } from '@angular/forms';
 import { InventoryInteractionService } from './../../inventory-interaction.service';
-import { PageEvent } from '@angular/material';
+import { PageEvent } from '@angular/material/paginator';
 import { Subscription } from 'rxjs';
 import { first } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';

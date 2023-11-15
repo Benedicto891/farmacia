@@ -16,7 +16,12 @@ import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 
 import { MatSelectModule, MatSelect } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatPaginatorModule, MatInputModule, MatDialogModule, MatButtonModule, MatButton, MatRadioModule, MatSnackBarModule } from '@angular/material';
+import { MatButtonModule, MatButton } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HeaderUserdetailsComponent } from './header/header-userdetails/header-userdetails.component';

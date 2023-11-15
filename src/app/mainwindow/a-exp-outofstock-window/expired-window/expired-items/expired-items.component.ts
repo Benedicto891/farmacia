@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 import { InventoryInteractionService } from './../../../a-inventory-window/inventory-interaction.service';
 import { Component, OnInit } from '@angular/core';
 import { Inventory } from 'src/app/mainwindow/a-inventory-window/inventory.model';
-import { MatDialog, MatDialogModule } from '@angular/material'
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-expired-items',

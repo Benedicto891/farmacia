@@ -1,4 +1,4 @@
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { SupplierInteractionService } from './../../../a-suppliers-window/supplier-interaction.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';

@@ -1,7 +1,7 @@
 import { AuthService } from './../auth.service';
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { MatSnackBarModule, MatSnackBar } from '@angular/material';
+import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
    templateUrl: './login.component.html',

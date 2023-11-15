@@ -28,7 +28,6 @@
               "src/styles.css",
               "node_modules/flickity/dist/flickity.min.css",
               "node_modules/chartist/dist/chartist.min.css",
-
               "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
               "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
@@ -41,7 +40,6 @@
               "node_modules/hammerjs/hammer.min.js",
               "node_modules/chart.js/dist/Chart.js",
               "node_modules/flickity/dist/flickity.pkgd.min.js"
-
             ]
           },
           "configurations": {
@@ -142,5 +140,8 @@
       }
     }
   },
-  "defaultProject": "pro"
+  "defaultProject": "pro",
+  "cli": {
+    "analytics": "3fdd1962-7f23-45f2-828b-a9d883b85bf5"
+  }
 }

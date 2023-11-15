@@ -1,4 +1,4 @@
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { InventoryInteractionService } from './../../../a-inventory-window/inventory-interaction.service';
 import { EmailInteractionService } from './../../new-doctor-order-window/email-Interaction.service';
 import { DoctorOderServices } from './../../../a-inventory-window/a-shopping-cart-window/DoctorOderServices.service';

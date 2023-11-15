@@ -5,7 +5,7 @@ import { Subject } from 'rxjs';
 import { AuthData } from './auth-data.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material'
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
 @Injectable({providedIn: 'root'})
 export class AuthService{

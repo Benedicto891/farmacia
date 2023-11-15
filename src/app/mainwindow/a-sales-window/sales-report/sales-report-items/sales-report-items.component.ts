@@ -1,4 +1,4 @@
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { element } from 'protractor';
 import { AuthService } from 'src/app/auth/auth.service';
 import { SalesInteractionService } from './../../../a-pointofsale-window/sales-interaction.service';

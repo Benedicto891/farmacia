@@ -1,4 +1,4 @@
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { SalesInformationArray } from './../../salesInformationArray.model';
 import { NgForm } from '@angular/forms';
 import { InventoryInteractionService } from './../../../a-inventory-window/inventory-interaction.service';
