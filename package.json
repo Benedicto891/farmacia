@@ -50,7 +50,7 @@
     "ng2-charts": "^2.3.0",
     "ng2-google-charts": "^6.1.0",
     "nodemailer": "^6.4.10",
-    "rxjs": "~6.6.7",
+    "rxjs": "^6.6.7",
     "socket.io": "^2.4.0",
     "socket.io-client": "^2.3.0",
     "tslib": "^1.10.0",
