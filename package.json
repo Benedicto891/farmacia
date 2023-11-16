@@ -25,7 +25,7 @@
     "@angular/router": "~10.2.5",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@tensorflow/tfjs": "^2.0.1",
-    "angular-bootstrap-md": "^14.0.0",
+    "angular-bootstrap-md": "^10.1.1",
     "angular-google-charts": "^1.1.4",
     "animate.css": "^3.7.2",
     "bcrypt": "^5.0.0",
