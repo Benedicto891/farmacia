@@ -18,7 +18,7 @@ export class DoctorSignupComponent{
 
   }
 
-  onImagePicked(){
+  onImagePicked(event: any){
 
   }
 

@@ -22,5 +22,10 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  }
+  },
+  "exclude": [
+    "node_modules/lodash",
+    "node_modules/chart.js",
+    "node_modules/@types/webgl2/index.d.ts"
+  ]
 }

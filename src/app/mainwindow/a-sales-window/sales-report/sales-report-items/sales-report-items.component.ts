@@ -5,7 +5,7 @@ import { SalesInteractionService } from './../../../a-pointofsale-window/sales-i
 import { Subscription } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Sales } from 'src/app/mainwindow/a-pointofsale-window/sales.model';
-import * as html2pdf from 'html2pdf.js';
+import * as html2pdf from 'src/assets/js/html2pdf.js';
 
 @Component({
   selector: 'app-sales-report-items',

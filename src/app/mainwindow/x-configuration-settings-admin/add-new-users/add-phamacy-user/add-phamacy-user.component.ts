@@ -100,7 +100,7 @@ export class AddPhamacyUserComponent implements OnInit {
     this.form.reset();
   }
 
-  onImagePicked(){
+  onImagePicked(e: any){
 
   }
 
