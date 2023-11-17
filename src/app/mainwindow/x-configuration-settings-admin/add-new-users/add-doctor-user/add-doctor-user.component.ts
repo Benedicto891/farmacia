@@ -1,5 +1,5 @@
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { NgForm, FormGroup, FormControl, Validators } from '@angular/forms';
+import { NgForm, UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 import { AuthDoctorUserService } from './../../../../auth/doctorAuth/authDoctorUser.service';
 import { AuthService } from 'src/app/auth/auth.service';
 import { Component, OnInit } from '@angular/core';
@@ -21,20 +21,20 @@ export class AddDoctorUserComponent implements OnInit {
   doc ;
   isLoading = false;
 
-  form: FormGroup;
+  form: UntypedFormGroup;
   private mode = "create";
   private docId : string;
 
   constructor(public authService : AuthService,public authDoctorUserService : AuthDoctorUserService, public route: ActivatedRoute){}
 
   ngOnInit(){
-    this.form = new FormGroup({
-      'name': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'email': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'nic': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'contact': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'password': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'role': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]})
+    this.form = new UntypedFormGroup({
+      'name': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'email': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'nic': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'contact': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'password': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'role': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]})
 
     });
 

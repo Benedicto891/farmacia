@@ -1,7 +1,7 @@
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { SupplierInteractionService } from './../../../a-suppliers-window/supplier-interaction.service';
 import { Component, OnInit} from '@angular/core';
-import {  FormGroup, FormControl, Validators } from '@angular/forms';
+import {  UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Supplier } from '../../supplier.model';
 
@@ -22,7 +22,7 @@ export class AddSupplierElementsComponent implements OnInit {
   supplier : Supplier;
   isLoading = false;
 
-  form: FormGroup;
+  form: UntypedFormGroup;
   private mode = "create";
   private supplierId : string;
 
@@ -31,13 +31,13 @@ export class AddSupplierElementsComponent implements OnInit {
 
 
   ngOnInit() {
-    this.form = new FormGroup({
-      'supplierID': new FormControl(null,{validators: [Validators.required, Validators.minLength(1),Validators.pattern('[0-9]+[Vv]')]}),
-      'name': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'email': new FormControl(null,{validators: [Validators.required,Validators.email, Validators.minLength(1),
+    this.form = new UntypedFormGroup({
+      'supplierID': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1),Validators.pattern('[0-9]+[Vv]')]}),
+      'name': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'email': new UntypedFormControl(null,{validators: [Validators.required,Validators.email, Validators.minLength(1),
         Validators.pattern("[^ @]*@[^ @]*"),emailDomainValidator]}),
-      'contact': new FormControl(null,{validators: [Validators.required, Validators.minLength(1), Validators.pattern("^[0-9]{10,12}$")]}),
-      'drugsAvailable': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]})
+      'contact': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1), Validators.pattern("^[0-9]{10,12}$")]}),
+      'drugsAvailable': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]})
     });
     this.route.paramMap.subscribe((paramMap: ParamMap)=>{
       if (paramMap.has('supplierId')){
@@ -102,7 +102,7 @@ export class AddSupplierElementsComponent implements OnInit {
 }
 
 //supplier email validation
-function emailDomainValidator(control: FormControl) { (1)
+function emailDomainValidator(control: UntypedFormControl) { (1)
   let email = control.value; (2)
   if (email && email.indexOf("@") != -1) { (3)
     let [_, domain] = email.split("@"); (4)

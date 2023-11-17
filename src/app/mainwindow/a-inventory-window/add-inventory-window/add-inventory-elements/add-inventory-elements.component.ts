@@ -1,5 +1,5 @@
 import { MatSnackBar } from '@angular/material/snack-bar';
-import {  FormGroup, FormControl, Validators } from '@angular/forms';
+import {  UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 import { InventoryInteractionService } from './../../inventory-interaction.service';
 import { Inventory } from './../../inventory.model';
 import { Component, OnInit } from '@angular/core';
@@ -21,7 +21,7 @@ export class AddInventoryElementsComponent implements OnInit {
 
   inventory : Inventory ;
   isLoading = false;
-  form: FormGroup;
+  form: UntypedFormGroup;
   imagePreview : string;
   private mode = "create";
   private inventoryId : string;
@@ -30,14 +30,14 @@ export class AddInventoryElementsComponent implements OnInit {
   constructor(private inventoryInteractionService: InventoryInteractionService, public route: ActivatedRoute , private snackBar: MatSnackBar){}
 
   ngOnInit() {
-    this.form = new FormGroup({
-      'email': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'name': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'quantity': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'batchId': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'expireDate': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'price': new FormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
-      'image': new FormControl(null,{validators: [Validators.required],asyncValidators:[mimeType]})
+    this.form = new UntypedFormGroup({
+      'email': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'name': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'quantity': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'batchId': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'expireDate': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'price': new UntypedFormControl(null,{validators: [Validators.required, Validators.minLength(1)]}),
+      'image': new UntypedFormControl(null,{validators: [Validators.required],asyncValidators:[mimeType]})
 
     });
     this.route.paramMap.subscribe((paramMap: ParamMap)=>{
