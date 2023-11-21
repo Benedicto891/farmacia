@@ -6,7 +6,6 @@ import { Subject, Observable, BehaviorSubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AuthDoctorData } from './doctorAuth-model';
-import { Token } from '@angular/compiler/src/ml_parser/lexer';
 
 @Injectable({providedIn: 'root'})
 export class AuthDoctorUserService {
@@ -44,7 +43,7 @@ export class AuthDoctorUserService {
 
 
   login(email: string, password){
-    const authDoctorData :AuthDoctorData = {name: name , contact: null , docId: null , email: email , password: password};
+    const authDoctorData :AuthDoctorData = {name: '' , contact: null , docId: null , email: email , password: password};
     this.http.post<{token: string, expiresIn: number, name:string, contact: string, email:string,docId:string}>("http://localhost:3000/api/doctorUser/doctorLogin",authDoctorData)
       .subscribe(response =>{
         const token= response.token;
