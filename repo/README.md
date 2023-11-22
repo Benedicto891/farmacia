@@ -1,1 +1,0 @@
-# Pharmacy-Mangment-System
